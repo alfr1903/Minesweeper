@@ -11,71 +11,89 @@ class BoardTest {
 
     @Test
     void when_input_matrix_empty_string_expect_to_throw_error() {
-        assertThrows(IllegalArgumentException.class, () -> {
-           Board.of("");
-        });
+        assertThrows(IllegalArgumentException.class, () -> new Board(""));
     }
 
     @Test
     void when_input_empty_matrix_expect_to_throw_error() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            Board.of("[]");
-        });
+        assertThrows(IllegalArgumentException.class, () -> new Board("[]"));
     }
 
     @Test
     void when_input_no_bomb_matrix_expect_to_return_no_bomb_2d_list() {
         List<List<String>> list2dActual = List.of(List.of("-"));
-        Assertions.assertEquals(list2dActual, Board.of("[-]"));
+        Assertions.assertEquals(list2dActual, new Board("-").content());
     }
 
     @Test
     void when_input_bomb_matrix_expect_to_return_bomb_2d_list() {
         List<List<String>> list2dActual = List.of(List.of("*"));
-        Assertions.assertEquals(list2dActual, Board.of("[*]"));
+        Assertions.assertEquals(list2dActual, new Board("*").content());
     }
 
     @Test
     void when_input_illegal_char_matrix_expect_to_throw_error() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            Board.of("[a]");
-        });
+        assertThrows(IllegalArgumentException.class, () -> new Board("[a]"));
     }
 
     @Test
     void when_input_1x2_bomb_matrix_expect_to_return_1x2_bomb_2d_list() {
         List<List<String>> list2dActual = List.of(List.of("*","*"));
-        Assertions.assertEquals(list2dActual, Board.of("[* *]"));
+        Assertions.assertEquals(list2dActual, new Board("[* *]").content());
     }
 
     @Test
     void when_input_1x2_bomb_matrix_with_extra_spaces_expect_to_return_1x2_bomb_2d_list() {
         List<List<String>> list2dActual = List.of(List.of("*","*"));
-        Assertions.assertEquals(list2dActual, Board.of("[ *   *  ]"));
+        Assertions.assertEquals(list2dActual, new Board("[ *   *  ]").content());
     }
 
     @Test
     void when_input_1x2_no_bomb_matrix_expect_to_return_1x2_no_bomb_2d_list() {
         List<List<String>> list2dActual = List.of(List.of("-","-"));
-        Assertions.assertEquals(list2dActual, Board.of("[- -]"));
+        Assertions.assertEquals(list2dActual, new Board("[- -]").content());
     }
 
     @Test
     void when_input_1x2_last_bomb_matrix_expect_to_return_1x2_last_bomb_2d_list() {
         List<List<String>> list2dActual = List.of(List.of("-","*"));
-        Assertions.assertEquals(list2dActual, Board.of("[- *]"));
+        Assertions.assertEquals(list2dActual, new Board("[- *]").content());
     }
 
     @Test
     void when_input_1x2_first_bomb_matrix_expect_to_return_1x2_first_bomb_2d_list() {
         List<List<String>> list2dActual = List.of(List.of("*","-"));
-        Assertions.assertEquals(list2dActual, Board.of("[* -]"));
+        Assertions.assertEquals(list2dActual, new Board("[* -]").content());
     }
 
     @Test
     void when_input_1x3_matrix_expect_to_return_1x3_2d_list() {
         List<List<String>> list2dActual = List.of(List.of("*","-","*"));
-        Assertions.assertEquals(list2dActual, Board.of("[* - *]"));
+        Assertions.assertEquals(list2dActual, new Board("[* - *]").content());
+    }
+
+    @Test
+    void when_input_2x1_matrix_expect_to_return_2x1_2d_list() {
+        List<List<String>> list2dActual = List.of(List.of("-"), List.of("-"));
+        Assertions.assertEquals(
+                list2dActual,
+                new Board(
+                        """
+                                [-]
+                                [-]
+                                """
+                ).content()
+        );
+    }
+
+    @Test
+    void when_input_no_AxB_matrix_expect_to_throw_error() {
+        assertThrows(IllegalArgumentException.class, () -> new Board(
+                """
+                        [- -]
+                        [-]
+                        """
+        ));
     }
 
     @Test
@@ -83,12 +101,12 @@ class BoardTest {
         List<List<String>> list2dActual = List.of(List.of("-","-"), List.of("-", "-"));
         Assertions.assertEquals(
                 list2dActual,
-                Board.of(
+                new Board(
                         """
                                 [- -]
                                 [- -]
                                 """
-                )
+                ).content()
         );
     }
 
@@ -101,13 +119,13 @@ class BoardTest {
         );
         Assertions.assertEquals(
                 list2dActual,
-                Board.of(
+                new Board(
                         """
                                 [- - -]
                                 [- - -]
                                 [- - -]
                                 """
-                )
+                ).content()
         );
     }
 
@@ -120,19 +138,19 @@ class BoardTest {
         );
         Assertions.assertEquals(
                 list2dActual,
-                Board.of(
+                new Board(
                         """
                                 [0 1 2 3]
                                 [4 5 6 7]
                                 [8 - * *]
                                 """
-                )
+                ).content()
         );
     }
 
     @Test
     void when_input_3x4_matrix_with_last_invalid_character_expect_to_throw_error() {
-        assertThrows(IllegalArgumentException.class, () -> Board.of(
+        assertThrows(IllegalArgumentException.class, () -> new Board(
                 """
                         [0 1 2 3]
                         [4 5 6 7]

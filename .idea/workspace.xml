@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ccfd67f8-a97c-4f18-aade-4fa0ddd13ccb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/minesweeper/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/minesweeper/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/minesweeper/Minesweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/minesweeper/Minesweeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/minesweeper/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/minesweeper/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/minesweeper/MinesweeperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/minesweeper/MinesweeperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +27,28 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Minesweeper" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Minesweeper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Minesweeper" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -72,7 +96,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.MinesweeperTest">
-    <configuration name="MatrixTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BoardTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -85,7 +109,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;minesweeper.MatrixTest&quot;" />
+            <option value="&quot;minesweeper.BoardTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -95,7 +119,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MatrixTest.when_input_1x2_bomb_matrix_with_extra_spaces_expect_to_return_1x2_bomb_2d_list" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BoardTest.when_input_no_AxB_matrix_expect_to_throw_error" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -108,7 +132,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;minesweeper.MatrixTest.when_input_1x2_bomb_matrix_with_extra_spaces_expect_to_return_1x2_bomb_2d_list&quot;" />
+            <option value="&quot;minesweeper.BoardTest.when_input_no_AxB_matrix_expect_to_throw_error&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -118,25 +142,23 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MatrixTest.when_input_3x4_matrix_with_last_invalid_character_expect_to_throw_error" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Minesweeper [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;minesweeper.MatrixTest.when_input_3x4_matrix_with_last_invalid_character_expect_to_throw_error&quot;" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -164,7 +186,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MinesweeperTest.when_input__one_by_one_board_with_no_bomb__expect_board_with_one_zero_as_output" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MinesweeperTest.when_input__1x1_board_with_no_bomb__expect_board_with_0_as_output" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -177,7 +199,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;minesweeper.MinesweeperTest.when_input__one_by_one_board_with_no_bomb__expect_board_with_one_zero_as_output&quot;" />
+            <option value="&quot;minesweeper.MinesweeperTest.when_input__1x1_board_with_no_bomb__expect_board_with_0_as_output&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -190,10 +212,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.MinesweeperTest" />
-        <item itemvalue="Gradle.MinesweeperTest.when_input__one_by_one_board_with_no_bomb__expect_board_with_one_zero_as_output" />
-        <item itemvalue="Gradle.MatrixTest" />
-        <item itemvalue="Gradle.MatrixTest.when_input_1x2_bomb_matrix_with_extra_spaces_expect_to_return_1x2_bomb_2d_list" />
-        <item itemvalue="Gradle.MatrixTest.when_input_3x4_matrix_with_last_invalid_character_expect_to_throw_error" />
+        <item itemvalue="Gradle.MinesweeperTest.when_input__1x1_board_with_no_bomb__expect_board_with_0_as_output" />
+        <item itemvalue="Gradle.Minesweeper [test]" />
+        <item itemvalue="Gradle.BoardTest" />
+        <item itemvalue="Gradle.BoardTest.when_input_no_AxB_matrix_expect_to_throw_error" />
       </list>
     </recent_temporary>
   </component>

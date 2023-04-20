@@ -1,0 +1,5 @@
+    // when input board [-], expect output board to be [0]
+    @Test
+    void when_input__one_by_one_board_with_no_bomb__expect_board_with_one_zero_as_output(){
+
+    }

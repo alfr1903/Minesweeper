@@ -1,0 +1,20 @@
+/*    public List<List<String>> generateBoard(List<List<String>> board) {
+        System.out.println("\nboard state before generated board:");
+        printBoard(board);
+
+        List<List<String>> newBoard = board;
+        *//* Possible code *//*
+
+        for (int row = 0; row < board.size(); row++) {
+            for (int col = 0; col < board.get(row).size(); col++) {
+                *//* Possible code *//*
+            }
+        }
+
+        *//* Possible code *//*
+
+        System.out.println("\nboard state after generated board:");
+        printBoard(board);
+
+        return newBoard;
+    }*/

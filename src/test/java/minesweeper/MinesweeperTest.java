@@ -19,7 +19,6 @@ class MinesweeperTest {
     }
 
     // when input board [*], expect output board to be [*]
-
     @Test
     void when_input__1x1_board_with_bomb__expect_board_with_bomb_as_output(){
         List<List<String>> expectedOutputBoard = Board.of("[*]");

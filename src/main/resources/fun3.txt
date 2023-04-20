@@ -1,0 +1,5 @@
+    // when input board [* -], expect output board to be [* 1]
+    @Test
+    void when_input__1x2_board_with_first_as_bomb__expect_board_with_bomb_and_1_as_output(){
+
+    }

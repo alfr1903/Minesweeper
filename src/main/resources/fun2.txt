@@ -1,5 +1,4 @@
     // when input board [*], expect output board to be [*]
-
     @Test
     void when_input__one_by_one_board_with_bomb__expect_board_with_one_zero_as_output(){
 

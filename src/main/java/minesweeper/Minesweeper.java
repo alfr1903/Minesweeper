@@ -10,7 +10,8 @@ public class Minesweeper {
 
         for (int row = 0; row < board.getNumRows(); row++) {
             for (int col = 0; col < board.getNumCols(); col++) {
-                /* Possible code */
+                if (board.getCell(row, col).equals( "*")) continue;
+                board.updateCell(row, col, "0");
             }
         }
 
@@ -19,9 +20,7 @@ public class Minesweeper {
         System.out.println("\nboard state after generated board:");
         System.out.println(board);
 
-        // should be refactored
-        if(board.content().equals(new Board("[*]").content())) return board;
-        return new Board("[0]");
+        return board;
     }
 
     public static void main(String[] args) {

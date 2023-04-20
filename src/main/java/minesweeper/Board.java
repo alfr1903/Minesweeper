@@ -1,18 +1,19 @@
 package minesweeper;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 public final class Board  {
-    private List<List<String>> board;
+    private List<ArrayList<String>> board;
 
     public Board(String boardString) {
         this.board = parseToBoard(boardString);
     }
 
-    public List<List<String>> content() {
+    public List<ArrayList<String>> content() {
         return board;
     }
 
@@ -32,7 +33,7 @@ public final class Board  {
         return board.get(0).size();
     }
 
-    private List<List<String>> parseToBoard(String boardString) {
+    private List<ArrayList<String>> parseToBoard(String boardString) {
         List<String> rows = Stream.of(boardString.trim().split("]"))
                 .map(row -> row.trim().replaceAll("\\[", "")).toList();
 
@@ -42,8 +43,8 @@ public final class Board  {
             if (!m.matches()) throw new
                     IllegalArgumentException("Row: [" + row + "] is not a valid row in the minesweeper matrix");
         }
-        List<List<String>> board = rows.stream()
-                .map(row -> List.of(row.trim().split("(?<=[-*0-8])\s*"))).toList();
+        List<ArrayList<String>> board = rows.stream()
+                .map(row -> new ArrayList<>(List.of(row.split("(?<=[-*0-8])\s*")))).toList();
         int numCols = board.get(0).size();
         for (List<String> row : board) {
             if (row.size() != numCols) throw new

@@ -10,7 +10,7 @@ public class Minesweeper {
 
         for (int row = 0; row < board.getNumRows(); row++) {
             for (int col = 0; col < board.getNumCols(); col++) {
-                if (board.getCell(row, col).equals( "*")) continue;
+                if (board.getCell(row, col).equals("*")) continue;
                 board.updateCell(row, col, "0");
             }
         }

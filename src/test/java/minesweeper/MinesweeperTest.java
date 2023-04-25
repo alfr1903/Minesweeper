@@ -9,8 +9,8 @@ class MinesweeperTest {
 
     @Test
     void when_adding_1_with_1__expect_2_to_be_the_sum() {
-        int expectedSum = 2;
         int actualSum = 1 + 1;
+        int expectedSum = 2;
         assertEquals(expectedSum, actualSum);
     }
 }

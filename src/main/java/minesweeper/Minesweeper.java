@@ -12,6 +12,9 @@ public class Minesweeper {
             for (int col = 0; col < board.getNumCols(); col++) {
                 if (board.getCell(row, col).equals("*")) continue;
                 board.updateCell(row, col, "0");
+
+                /* Possible code */
+
             }
         }
 

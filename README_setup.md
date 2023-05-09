@@ -2,10 +2,10 @@
 If you haven't already, this is the time to install the prerequisite for today's workshop! 
 
 There is a couple things required to do today's workshop: 
-- Java (version 17) 
-- A Java IDE - we'll show how you install Intellij, since that comes with Gradle
-- If you choose a different IDE than IntelliJ - install Gradle
-- JUnit 5 - the testing library we will use
+1. Java (version 17) 
+2. A Java IDE - we'll show how you install Intellij, since that comes with Gradle
+3. If you choose a different IDE than IntelliJ - install Gradle
+4. JUnit 5 - the testing library we will use
 
 ## Steps
 
@@ -28,7 +28,7 @@ https://docs.oracle.com/en/java/javase/17/install/installation-jdk-linux-platfor
 https://docs.oracle.com/en/java/javase/17/install/installation-jdk-macos.html#GUID-E8A251B6-D9A9-4276-ABC8-CC0DAD62EA33
 - Download the required file (64-bit ARM) https://download.oracle.com/java/20/latest/jdk-20_macos-aarch64_bin.dmg
 - Find and double-click on the downloaded file to start it.
-- 
+
 ---
 ### 2. Install a Java IDE (recommending IntelliJ)
 - Download IntelliJ (default link for Windows, select for your OS) https://www.jetbrains.com/idea/download/#section=windows

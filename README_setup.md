@@ -29,8 +29,9 @@ https://docs.oracle.com/en/java/javase/17/install/installation-jdk-linux-platfor
 #### *macOS* 
 https://docs.oracle.com/en/java/javase/17/install/installation-jdk-macos.html#GUID-E8A251B6-D9A9-4276-ABC8-CC0DAD62EA33
 
+---
 ### 2. Install a Java IDE (recommending IntelliJ)
-- Download IntelliJ for your OS here https://www.jetbrains.com/idea/download/#section=windows
+- Download IntelliJ (default link for Windows, select for your OS) https://www.jetbrains.com/idea/download/#section=windows
 
 ### 3. Install Gradle 
 - https://gradle.org/install/

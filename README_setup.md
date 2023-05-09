@@ -7,10 +7,6 @@ There is a couple things required to do today's workshop:
 - If you choose a different IDE than IntelliJ - install Gradle
 - JUnit 5 - the testing library we will use
 
-
-Optional: 
-- Git - version control system, to clone the repo we have prepared for you
-
 ## Steps
 
 ### 1. Install Java
@@ -36,8 +32,11 @@ https://docs.oracle.com/en/java/javase/17/install/installation-jdk-macos.html#GU
 
 ---
 ### 3. Install Gradle 
+⚠ Only required if you chose another IDE than IntelliJ in the last step. 
 - https://gradle.org/install/
 
 ---
 ### 4. Install JUnit 5
+JUnit is the unit testing library for Java we will be using this workshop. Might already be installed from your previous steps
 - https://junit.org/junit5/
+

@@ -27,6 +27,37 @@ public class Minesweeper {
     }
 
     public static void main(String[] args) {
+        Minesweeper minesweeper = new Minesweeper();
+
+        // can be used to test final solution
+        /*
+        minesweeper.generateBoard(
+                new Board(
+                                """
+                                [* - - - * - - -]
+                                [* - - - * - - -]
+                                [- - - - * * - -]
+                                [- - - - - * - -]
+                                [- - - - - - - -]
+                                [- - - - - - - -]
+                                [- - - - - - - -]
+                                [- - * * * - - -]
+                                """
+                )
+        );
+        */
+
+        // printed answer should look like this:
+        /*
+        [* 2 0 2 * 2 0 0]
+        [* 2 0 3 * 4 1 0]
+        [1 1 0 2 * * 2 0]
+        [0 0 0 1 3 * 2 0]
+        [0 0 0 0 1 1 1 0]
+        [0 0 0 0 0 0 0 0]
+        [0 1 2 3 2 1 0 0]
+        [0 1 * * * 1 0 0]
+        */
 
     }
 }

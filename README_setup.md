@@ -15,16 +15,20 @@ https://docs.oracle.com/en/java/javase/17/install/installation-jdk-microsoft-win
 
 - Download the JDK installer, version 17: https://www.oracle.com/java/technologies/downloads/#jdk17-windows
     - Choose the "x64 Installer" https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe
-- Find the file in your `Download` folder, and double-click the file.
+- Find the file in your `Download` folder, and double-click the file to start it.
 - Follow the instructions provided by the installer - in general, the default settings are usually good-to-go. 
 - (Optional) Delete the `.exe` file after Java has been successfully installed 
 
 #### *Linux/Ubuntu*
 https://docs.oracle.com/en/java/javase/17/install/installation-jdk-linux-platforms.html#GUID-737A84E4-2EFF-4D38-8E60-3E29D1B884B8
+- Download the required file (64-bit ARM) https://download.oracle.com/java/20/latest/jdk-20_linux-aarch64_bin.tar.gz 
+- Unpack the tarball and install the downloaded JDK `$ tar zxvf jdk-17_linux-x64_bin.tar.gz` 
 
 #### *macOS* 
 https://docs.oracle.com/en/java/javase/17/install/installation-jdk-macos.html#GUID-E8A251B6-D9A9-4276-ABC8-CC0DAD62EA33
-
+- Download the required file (64-bit ARM) https://download.oracle.com/java/20/latest/jdk-20_macos-aarch64_bin.dmg
+- Find and double-click on the downloaded file to start it.
+- 
 ---
 ### 2. Install a Java IDE (recommending IntelliJ)
 - Download IntelliJ (default link for Windows, select for your OS) https://www.jetbrains.com/idea/download/#section=windows
